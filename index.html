@@ -76,59 +76,57 @@
           
         </div>
   </body>
- <footer id="contacto">
-      <div class="footer">
-        <div class="footer-column">
-          <h4>Sobre nosotros</h4>
-          <p>Nuestra empresa es líder en Reforma y Reparaciones.</p>
-        </div>
+ <footer id="contacto" style="background:#092d0a; color:#fff; padding:40px 20px;">
+  <div style="display:flex; flex-wrap:wrap; justify-content:space-between; max-width:1200px; margin:auto;">
 
-        <div class="footer-column">
-          <h4>Accesibilidad</h4>
-          <div class="acc-container">
-            <button class="acc-btn" onclick="toggleMenu()">♿ Opciones de Accesibilidad ▼</button>
-            <div class="acc-menu" id="accMenu">
-              <button class="acc-option" onclick="changeFontSize(2)">Aumentar texto</button>
-              <button class="acc-option" onclick="changeFontSize(-2)">Disminuir texto</button>
-              <button class="acc-option" onclick="toggleContrast()">Alto contraste</button>
-              <button class="acc-option" onclick="toggleZoom()">Modo lupa</button>
-            </div>
-          </div>
-        </div>
+    <!-- Columna 1: Nosotros -->
+    <div style="flex:1; min-width:200px; margin:10px;">
+      <h3>Nosotros</h3>
+      <p>Somos una empresa comprometida con la formación vial, brindando calidad y cercanía en cada clase.</p>
+    </div>
 
-        <div class="footer-column">
-          <h4>Enlaces útiles</h4>
-          <a href="#header">Inicio</a>
-          <a href="enlaces/politica.html">Política de privacidad</a>
-          <a href="enlaces/Terminos.html">Términos de uso</a>
-          <a href="mailto:someone@example.com">Enviar Correo</a>
-        </div>
-    
-        <div class="footer-column">
-          <h4>Síguenos</h4>
-          <div class="social-icons">
-            <a href="https://www.facebook.com/top?q=autoescuela%20angu" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
-            <a href="https://x.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/5969/5969020.png" alt="X"></a>
-            <a href="https://instagram.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
-            <a href="https://wa.me/34649049574" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp"></a>
-          </div>
-        </div>
-    
-        <div class="footer-column">
-          <h4>Ubicación</h4>
-          <p>Sanlucar de Barrameda</p>
-          <iframe class="map-embed"
-           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3195.7295486651687!2d-6.3514068!3d36.777055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0dde2450d5e0fb%3A0xed1a4a7fd5d21205!2sC.%20Carril%20de%20los%20%C3%81ngeles%2C%2068%2C%2011540%20Sanl%C3%BAcar%20de%20Barrameda%2C%20C%C3%A1diz%2C%20Espa%C3%B1a!5e0!3m2!1ses!2sus!4v1746036723667!5m2!1ses!2sus" width="600" height="450" style="border:0;"
-            allowfullscreen=""
-            loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
-        </div>
+    <!-- Columna 2: Enlaces útiles -->
+    <div style="flex:1; min-width:200px; margin:20px; padding-left: 60px;">
+      <h3>Enlaces útiles</h3>
+      <ul style="list-style:none; padding:0;">
+        <li><a href="index.html" style="color:#fff;">Inicio</a></li>
+        <li><a href="/enlaces/Terminos.html" style="color:#fff;">Terminos</a></li>
+        <li><a href="/enlaces/politica.html" style="color:#fff;">Políticas</a></li>
+        <li><a href="mailto:contacto@autoescuela.com" style="color:#fff;">Contacto</a></li>
+      </ul>
+    </div>
+
+    <!-- Columna 3: Síguenos -->
+    <div style="flex:1; min-width:200px; margin:10px; padding-right: 60px;">
+      <h3>Síguenos</h3>
+      <div style="display:flex; gap:10px;">
+        <a href="https://www.facebook.com/people/Autoescuela-Angu/61555003352827/" target="_blank" aria-label="Facebook">
+          <img src="/img/facebook.png" alt="Facebook" width="45px" height="45px"></a>
+        <a href="https://wa.me/+34658093420" target="_blank">
+          <img src="/img/whatsup.png" alt="WhatsApp" width="40px" height="40px">
+        </a>
+        <a href="https://www.instagram.com/autoescuelaangu/" aria-label="Instagram">
+          <img style="padding-top: 5px;" src="/img/icon-instagram.webp" alt="Instagram" width="32" height="32"></a>
+        <a href="#" aria-label="X">
+          <img src="/img/icono x.png" alt="X" width="43" height="43"> </a>
       </div>
-    
-      <div class="autor">
-        &copy; 2025 Tu Empresa. Todos los derechos reservados.
-      </div>
-    </footer>
+    </div>
+
+    <!-- Columna 4: Ubicación -->
+    <div style="flex:1; min-width:200px; margin:10px;">
+      <h3>Ubicación</h3>
+      <p>C/ Pozo amarguillo nº 5</p>
+      <p>Sanlúcar de Barrameda, Cádiz</p>
+      <a class="telefono" href="tel:+34658 09 34 20">Tel:658 09 34 20</a>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3195.8943425164935!2d-6.356852525797247!3d36.77310206922933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0dde256db78337%3A0xff72ff1d0f4828bc!2sAutoescuela%20Angu!5e0!3m2!1ses!2ses!4v1752337148242!5m2!1ses!2ses" width="180" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+  </div>
+  <div style="text-align:center; margin-top:20px;">
+    &copy; 2025 Autoescuela Angu. Todos los derechos reservados.
+  </div>
+</footer>
+
 
 
 
