@@ -37,10 +37,11 @@ body {
 }
 
 .ul-nav li {
-  margin: 0 10px;
+  margin: 0 15px;
 }
 
 .ul-nav a {
+ font-size: 25px;
   text-decoration: none;
   color: #333;
   font-weight: bold;
