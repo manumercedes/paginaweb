@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+
+}
+
+.header {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #005f73;
+  color: white;
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 10px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #94d2bd;
+}
+
+.contenido {
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+.post {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 5px solid #005f73;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.post h2 {
+  margin-bottom: 10px;
+}
+
+.fecha {
+  font-size: 0.85rem;
+  color: #777;
+  margin-bottom: 15px;
+}
+.valoraciones {
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-left: 5px solid #005f73;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.testimonio {
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+
+.footer {
+  height: auto;
+  text-align: center;
+ background-color: #005f73;
+  color: #bbb;
+  margin-top: 40px;
+}
+.social-icons {
+ display: grid;
+}
+.social-icons img {
+  width: 38px;
+  height: 30px;
+
+  padding-left: 10px;
+ margin-top: 10px;
+}
+.boton {
+  width: 60px;
+ border-color: rgb(222, 210, 78);
+    border-radius: 5px;
+   background-color: #005f73;
+   margin-bottom: 20px;
+   margin-left: 20px;
+   
+
+  
+
+}
+.boton a {
+  color: aliceblue;
+  text-decoration: none;
+}
+.copy {
+    background-color: #777;
+   
+}

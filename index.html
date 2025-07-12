@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autoescuela snlucar barrameda Autoescuela angu</title>
+    <link rel="stylesheet" href="style.css">
+    
+ </head>
+ <header class="header" id="header">
+    <div class="navbar">
+         <img src="img/logo.jpg" class="logo" alt="logo1">
+            <h1 class="title">Autoescuela Angu</h1>
+        <button class="hamburger" onclick="toggleNavbar()">☰</button>
+       <ul class="ul-nav" id="navLinks">
+          <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+          <li><a href="enlaces/blog.html">Blog</a></li>
+         <li><a href="#contacto">Contacto</a></li>
+        </ul>
+   </div>
+
+
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="img/fachada.jpg" alt="Imagen 1" >
+                <img src="img/imagenfecebook.png" alt="Imagen 2">
+                <img src="img/mosaic.jpg" alt="Imagen 3">
+            </div>
+        </div>
+        <script src="script.js"></script>
+  </header>
+ <body>
+    <h2 class="enunciado">NUESTRO EQUIPO</h2>
+    <div class="container-card">
+          <div class="card1" style="width: 18rem;">
+                 <img src="img/ai-generated.png" class="card-img-top" alt="...ai-generated">
+                <div class="card-body">
+                    <h4 class="card-title">Profesora Teoria</h4>
+                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+          </div>
+      
+          <div class="card2" style="width: 18rem;">
+                   <img src="img/ai-generated.png"  class="card-img-top2" alt="ai-generated2">
+                 <div class="card-body">
+                    <h4 class="card-title2">Profesora Practica</h4>
+                    <p class="card-text2">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                    <a href="#" class="btn btn-primary2">Go somewhere</a>
+                 </div>
+             </div>
+        <div class="card3" style="width: 18rem;">
+              <img src="img/ai-generated.png"  class="card-img-top3" alt="ai-generated3">
+            <div class="card-body">
+                <h4 class="car d-title3">Recepcionista</h4>
+                   <p class="card-text3">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                <a href="#" class="btn btn-primary2">Go somewhere</a>
+            </div>
+      </div>
+      
+        <div class="containe_google">
+               <h2>Pincha el icono <br> para bajarte la aplicacion de test</h2>
+            <div class="imagenaplicacion">
+               <img src="imagenaplicacion.webp" alt="imagen FacilAuto" width="180" height="350">
+            </div>
+          <div class="google-play">
+                <a href="https://play.google.com/store/search?q=facil%20auto&c=apps&hl=es_419&gl=US" target="_blank">
+                    <img src="Disponible-en-Google-Play.png" alt="Google FacilAuto" width="130" height="60"></a>
+          </div>
+            <div class="apple-store">
+                <a href="https://apps.apple.com/es/app/facil-auto/id6444221234" target="_blank">
+                  <img src="Consiguelo-en-el-App-Store.png" alt="Apple FacilAuto" width="130" height="60"></a>
+            </div>
+          
+        </div>
+  </body>
+ <footer id="contacto">
+      <div class="footer">
+        <div class="footer-column">
+          <h4>Sobre nosotros</h4>
+          <p>Nuestra empresa es líder en Reforma y Reparaciones.</p>
+        </div>
+
+        <div class="footer-column">
+          <h4>Accesibilidad</h4>
+          <div class="acc-container">
+            <button class="acc-btn" onclick="toggleMenu()">♿ Opciones de Accesibilidad ▼</button>
+            <div class="acc-menu" id="accMenu">
+              <button class="acc-option" onclick="changeFontSize(2)">Aumentar texto</button>
+              <button class="acc-option" onclick="changeFontSize(-2)">Disminuir texto</button>
+              <button class="acc-option" onclick="toggleContrast()">Alto contraste</button>
+              <button class="acc-option" onclick="toggleZoom()">Modo lupa</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Enlaces útiles</h4>
+          <a href="#header">Inicio</a>
+          <a href="enlaces/politica.html">Política de privacidad</a>
+          <a href="enlaces/Terminos.html">Términos de uso</a>
+          <a href="mailto:someone@example.com">Enviar Correo</a>
+        </div>
+    
+        <div class="footer-column">
+          <h4>Síguenos</h4>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/top?q=autoescuela%20angu" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+            <a href="https://x.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/5969/5969020.png" alt="X"></a>
+            <a href="https://instagram.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
+            <a href="https://wa.me/34649049574" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp"></a>
+          </div>
+        </div>
+    
+        <div class="footer-column">
+          <h4>Ubicación</h4>
+          <p>Sanlucar de Barrameda</p>
+          <iframe class="map-embed"
+           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3195.7295486651687!2d-6.3514068!3d36.777055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0dde2450d5e0fb%3A0xed1a4a7fd5d21205!2sC.%20Carril%20de%20los%20%C3%81ngeles%2C%2068%2C%2011540%20Sanl%C3%BAcar%20de%20Barrameda%2C%20C%C3%A1diz%2C%20Espa%C3%B1a!5e0!3m2!1ses!2sus!4v1746036723667!5m2!1ses!2sus" width="600" height="450" style="border:0;"
+            allowfullscreen=""
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    
+      <div class="footer-bottom">
+        &copy; 2025 Tu Empresa. Todos los derechos reservados.
+      </div>
+    </footer>
+
+
+
+</html>
