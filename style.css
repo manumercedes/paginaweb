@@ -314,8 +314,8 @@ padding-bottom: 20px;
   height: 35px;
   text-align: center;
   font-size: 1em;
-padding-top: 12px;
-  margin: -20px;
+  padding-top: 12px;
+   color: #b8b3b3;
   background-color: #040107; /* o el color que uses en el footer */
 }
 
