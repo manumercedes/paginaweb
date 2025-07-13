@@ -159,98 +159,128 @@ nav ul li a:hover {
 
 
 /* Formulario de Comentarios */
-.comment-form {
-    background-color: #f9f9f9;
-    padding: 25px;
+.container {
+    background: #fff;
+    padding: 30px;
     border-radius: 8px;
-    margin-top: 30px;
-    box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
 }
 
-.form-group {
-    margin-bottom: 15px;
+h1, h2 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 25px;
 }
 
-.form-group label {
+.rating-form-container {
+    background-color: #e8f5e9;
+    padding: 25px;
+    border-radius: 6px;
+    margin-bottom: 30px;
+    border: 1px solid #d4edda;
+}
+
+.rating-form .form-group {
+    margin-bottom: 18px;
+}
+
+.rating-form label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     font-weight: bold;
-    color: #555;
+    color: #4CAF50;
 }
 
-.form-group input[type="text"],
-.form-group input[type="email"],
-.form-group textarea {
+.rating-form input[type="text"],
+.rating-form textarea {
     width: calc(100% - 20px);
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid #ccc;
     border-radius: 4px;
-    font-size: 1em;
-    transition: border-color 0.3s ease;
+    font-size: 1rem;
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho y alto total del elemento */
 }
 
-.form-group input[type="text"]:focus,
-.form-group input[type="email"]:focus,
-.form-group textarea:focus {
-    border-color: #007bff;
-    outline: none;
+.rating-form textarea {
+    resize: vertical;
 }
 
-.comment-form button {
-    background-color: #28a745;
+.stars {
+    font-size: 2rem;
+    color: #FFD700; /* Color dorado para las estrellas */
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.stars i {
+    margin-right: 5px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.stars i:hover {
+    transform: scale(1.1);
+}
+
+.stars i.filled {
+    color: #FFD700;
+}
+
+.stars i.empty {
+    color: #ccc; /* Color más claro para estrellas vacías */
+}
+
+.submit-button {
+    background-color: #4CAF50;
     color: white;
+    padding: 12px 20px;
     border: none;
-    padding: 12px 25px;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 1.1em;
-    transition: background-color 0.3s ease;
-    display: block;
+    font-size: 1.1rem;
     width: 100%;
-    max-width: 200px;
-    margin: 20px auto 0;
+    transition: background-color 0.3s ease;
 }
 
-.comment-form button:hover {
-    background-color: #218838;
+.submit-button:hover {
+    background-color: #45a049;
 }
 
-/* Lista de Comentarios */
-.comments-list {
-    margin-top: 40px;
-    padding-top: 20px;
+.ratings-list {
+    margin-top: 20px;
     border-top: 1px solid #eee;
+    padding-top: 20px;
 }
 
-.comments-list h3 {
-    text-align: left;
-    margin-bottom: 20px;
-    color: #0056b3;
-}
-
-.comment-item {
-    background-color: #f0f8ff; /* Un azul claro para destacar los comentarios */
-    border: 1px solid #e0f0ff;
+.rating-item {
+    background: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
     padding: 15px;
-    border-radius: 6px;
     margin-bottom: 15px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
-.comment-item p {
-    margin: 0 0 8px 0;
-    font-size: 1em;
+.rating-item p {
+    margin: 5px 0;
 }
 
-.comment-item strong {
-    color: #333;
+.rating-item .username {
+    font-weight: bold;
+    color: #3f51b5; /* Un azul agradable para el nombre de usuario */
 }
 
-.comment-date {
-    font-size: 0.85em;
-    color: #777;
-    text-align: right;
-    display: block;
+.rating-item .rating-stars {
+    color: #FFD700;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.rating-item .comment {
+    font-style: italic;
+    color: #555;
+    word-wrap: break-word; /* Asegura que los comentarios largos se ajusten */
 }
 
 /* Footer */
