@@ -70,37 +70,41 @@
                 </div>
                 </div>
             
-        </section>
+        <div class="container">
+        <h1>Deja tu Valoración</h1>
 
-        <section id="comentarios" class="content-section">
-            <h2>Deja Tu Comentario</h2>
-            <form class="comment-form">
+        <div class="rating-form-container">
+            <form id="ratingForm" class="rating-form">
                 <div class="form-group">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required>
+                    <label for="username">Nombre de Usuario:</label>
+                    <input type="text" id="username" name="username" required>
                 </div>
+
                 <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                    <label>Tu Valoración:</label>
+                    <div class="stars" id="starRating">
+                        <i class="far fa-star" data-value="1"></i>
+                        <i class="far fa-star" data-value="2"></i>
+                        <i class="far fa-star" data-value="3"></i>
+                        <i class="far fa-star" data-value="4"></i>
+                        <i class="far fa-star" data-value="5"></i>
+                    </div>
+                    <input type="hidden" id="ratingValue" name="rating" required>
                 </div>
+
                 <div class="form-group">
-                    <label for="comentario">Comentario:</label>
-                    <textarea id="comentario" name="comentario" rows="5" required></textarea>
+                    <label for="comment">Comentario:</label>
+                    <textarea id="comment" name="comment" rows="4" required></textarea>
                 </div>
-                <button type="submit">Enviar Comentario</button>
+
+                <button type="submit" class="submit-button">Enviar Valoración</button>
             </form>
+        </div>
 
-            <div class="comments-list">
-                <h3>Comentarios Anteriores:</h3>
-                <div class="comment-item">
-                    <p><strong>Juan Pérez:</strong> ¡Excelente blog! Muy útil la sección de imágenes.</p>
-                    <span class="comment-date">10 de Julio, 2025</span>
-                </div>
-                <div class="comment-item">
-                    <p><strong>Ana Gómez:</strong> Me encanta el contenido de los videos. ¡Seguid así!</p>
-                    <span class="comment-date">9 de Julio, 2025</span>
-                </div>
-                </div>
+        <h2>Valoraciones Existentes</h2>
+        <div id="ratingsList" class="ratings-list">
+            </div>
+    </div>
             <p>Nota: Para que los comentarios se guarden y se muestren dinámicamente, necesitarías un **backend** (un servidor y una base de datos) que procese y almacene los comentarios. Este formulario es solo el frontend.</p>
         </section>
     </main>
