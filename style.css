@@ -212,7 +212,95 @@ margin-top: 50px;
   .containe_google:hover{
       transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
   }
+  /* enlace Comentarios */
+.review-container {
+            background-color: #ffffff;
+            border-radius: 15px; /* Bordes más redondeados */
+            padding: 40px;
+            margin: 20px;
+            max-width: 550px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada pero suave */
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            border: 1px solid #e0e6ed; /* Borde sutil */
+        }
 
+        .review-container:hover {
+            transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        h1 {
+            font-size: 2.2em; /* Título más grande */
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-weight: 600; /* Más peso para el título */
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.7;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .google-review-button {
+            display: inline-flex; /* Alinea ícono y texto */
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(45deg, #4285F4 0%, #34a853 100%); /* Gradiente de color de Google */
+            color: white;
+            padding: 15px 35px; /* Más padding para un botón más grande */
+            border-radius: 50px; /* Botón píldora */
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: 600;
+            margin-top: 25px;
+            transition: all 0.5s ease;
+            box-shadow: 0 5px 15px rgba(66, 133, 244, 0.4); /* Sombra para el botón */
+            letter-spacing: 0.5px; /* Espaciado entre letras */
+        }
+
+        .google-review-button:hover {
+            transform: translateY(-3px); /* Pequeño salto al pasar el ratón */
+            box-shadow: 0 8px 20px rgba(66, 133, 244, 0.6); /* Sombra más intensa al pasar el ratón */
+            background: linear-gradient(45deg, #3367D6 0%, #2f8c47 100%); /* Gradiente ligeramente más oscuro */
+        }
+
+        .google-review-button svg {
+            margin-right: 10px; /* Espacio entre el ícono y el texto */
+            width: 24px;
+            height: 24px;
+            fill: white; /* Color del ícono */
+        }
+
+        .instructions {
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #888888;
+        }
+        .icono-google{
+            border-radius: 20px;
+            padding-right: 5px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 600px) {
+            .review-container {
+                padding: 30px 20px;
+                margin: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            p {
+                font-size: 1em;
+            }
+            .google-review-button {
+                padding: 12px 25px;
+                font-size: 1.1em;
+            }
+        }
 
   @media screen and (min-width: 600px) {
     .footer {
