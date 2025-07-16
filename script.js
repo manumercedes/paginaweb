@@ -20,28 +20,22 @@ function toggleMenu() {
     const isVisible = menu.style.display === "block";
     menu.style.display = isVisible ? "none" : "block";
   }
-   // Alternar visibilidad del menú
-  function toggleMenu() {
-    const menu = document.getElementById("accMenu");
-    menu.style.display = (menu.style.display === "block") ? "none" : "block";
-  }
+   /*cookies*/
+document.addEventListener('DOMContentLoaded', () => {
+  const cookieBanner = document.getElementById('cookieConsent');
+  const acceptButton = document.getElementById('acceptCookies');
 
-  // Cambiar tamaño del texto
-  function changeFontSize(delta) {
-    const elements = document.querySelectorAll("body, body *:not(.acc-menu):not(.acc-menu *)");
-    elements.forEach(el => {
-      const currentSize = window.getComputedStyle(el).fontSize;
-      const newSize = Math.max(10, parseFloat(currentSize) + delta);
-      el.style.fontSize = newSize + "px";
+  // Si ya se aceptaron las cookies, no se muestra el banner
+  if (localStorage.getItem('cookiesAccepted') === 'true') {
+    cookieBanner.style.display = 'none';
+  } else {
+    // Si no se han aceptado, se muestra el banner
+    cookieBanner.style.display = 'flex';
+
+    acceptButton.addEventListener('click', () => {
+      // Oculta el banner y guarda la preferencia
+      cookieBanner.style.display = 'none';
+      localStorage.setItem('cookiesAccepted', 'true');
     });
   }
-
-  // Alternar modo de alto contraste
-  function toggleContrast() {
-    document.body.classList.toggle("high-contrast");
-  }
-
-  // Alternar modo lupa
-  function toggleZoom() {
-    document.body.classList.toggle("zoomed");
-  }
+});
