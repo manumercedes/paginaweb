@@ -172,26 +172,45 @@ margin-top: 50px;
    margin-left: 100px;
  }
 .containe_google {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
-    gap: 10px;
-    
-  }
+
+   height: 475px;
+   width: 250px;
+   display: grid;
+   grid-template-rows: 1fr 0.3fr 0.3fr ;
+   text-align: center;
+   align-items: center;
+   margin-top: 20px;
+   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada pero suave */
+   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+   border: 1px solid #e0e6ed; /* Borde sutil */
+   border-radius: 15px; /* Bordes más redondeados */
+   }
+   .matferline{
+    padding-top: 40px;
+    transition: transform 0.5s;
+   }
+   .matferline:hover {
+     transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
+ }
    .google-play{
-    padding-top: 90px;
+    padding-top: 40px;
+    transition: transform 0.5s;
+   }
+   .google-play:hover {
+   transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
+  
    }
   .apple-store{
-    padding-top: 90px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    transition: transform 0.5s;
   }
-  .containe_google h2 {
-    color: #005f73;
-    padding-top: 80px;
-   
-    text-align: center;
-    font-size: 1.5rem;
-
+.apple-store:hover {
+   transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
+  
+  }
+  .containe_google:hover{
+      transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
   }
 
 
