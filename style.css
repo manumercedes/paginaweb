@@ -205,8 +205,29 @@ margin-top: 50px;
     }
   }
 
+  .footer-inicio p{
+    color: white;
+  }
+  .columna2 li a:hover {
+font-size: 25px;
+
+  }
+  .columna2 li a{
+ text-decoration: none;
+
+  }
+  .columna2 ul{
+    list-style:none;
+    padding:0;
+    text-decoration: none;
+  }
 .telefono {
   color: aliceblue;
  text-decoration: none;
+ margin-bottom: 10px;
 }
+.telefono:hover {
+color: #1b8446;
+}
+
 
