@@ -106,26 +106,71 @@ body {
   text-align: center;
 }
 .container-card {
-  margin-top: 30px;
-  margin-bottom: 30px;
   display: flex;
-  gap: 90px;
+  gap: 100px;
   justify-content: center; /* Opcional, centra las cards en la página */
   flex-wrap: wrap; /* Por si la pantalla es pequeña */
+margin-top: 50px;
+}
+.card-title {
+  text-align: center;
+}
+.card1 {
+  width: 22rem;
+  height: 22rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada pero suave */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: 1px solid #e0e6ed; /* Borde sutil */
+    border-radius: 15px;
+    margin-left: 90px;
+}
+.card1:hover {
+   transform: translateY(-6px);
+}
+
+.card2 {
+   width: 22rem;
+  height: 22rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada pero suave */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: 1px solid #e0e6ed; /* Borde sutil */
+    border-radius: 15px;
+}
+.card2:hover {
+   transform: translateY(-6px);
+}
+.card3{
+   width: 22rem;
+  height: 22rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada pero suave */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: 1px solid #e0e6ed; /* Borde sutil */
+    border-radius: 15px;
+}
+.card3:hover {
+   transform: translateY(-6px);
 }
 .card-img-top {
   width: 150px;
+  height: 150px;
   border-radius: 50px;
+   margin-left: 100px;
+  
 }
 .card-img-top2 {
   width: 150px;
+  height: 150px;
   border-radius: 50px;
+  margin-left: 100px;
+ 
 }
 
 .card-img-top3 {
-  width: 150px;
+ width: 150px;
+  height: 150px;
   border-radius: 50px;
-}
+   margin-left: 100px;
+ }
 .containe_google {
     display: flex;
     flex-direction: column;
