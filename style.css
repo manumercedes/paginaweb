@@ -111,68 +111,163 @@ body {
   justify-content: center; /* Opcional, centra las cards en la página */
   flex-wrap: wrap; /* Por si la pantalla es pequeña */
 margin-top: 50px;
+
 }
 .card-title {
   text-align: center;
+  font-size: 25px;
 }
-.card1 {
+
+.card1, .card2, .card3 {
   width: 22rem;
   height: 22rem;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada pero suave */
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     border: 1px solid #e0e6ed; /* Borde sutil */
     border-radius: 15px;
-    margin-left: 90px;
+    overflow: hidden; 
+    
+}
+.card1 {
+  margin-left: 80px;
 }
 .card1:hover {
    transform: translateY(-6px);
 }
 
-.card2 {
-   width: 22rem;
-  height: 22rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada pero suave */
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    border: 1px solid #e0e6ed; /* Borde sutil */
-    border-radius: 15px;
-}
 .card2:hover {
    transform: translateY(-6px);
 }
-.card3{
-   width: 22rem;
-  height: 22rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada pero suave */
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    border: 1px solid #e0e6ed; /* Borde sutil */
-    border-radius: 15px;
-}
+
 .card3:hover {
    transform: translateY(-6px);
 }
 .card-img-top {
-  width: 150px;
-  height: 150px;
-  border-radius: 50px;
-   margin-left: 100px;
-  
+  width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
 }
 .card-img-top2 {
-  width: 150px;
-  height: 150px;
-  border-radius: 50px;
-  margin-left: 100px;
- 
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
 }
 
 .card-img-top3 {
- width: 150px;
-  height: 150px;
-  border-radius: 50px;
-   margin-left: 100px;
+   width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
  }
-.containe_google {
 
+@media (max-width: 768px) {
+  .container-card {
+    flex-direction: column;
+    align-items: center; 
+  }
+  .card1 {
+    margin-right: 80px;
+  }
+}
+.container-permiso {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 90%;
+  margin: 40px auto;
+  padding: 30px;
+  background-image: url("img/Elegir-la-autoescuela-ideal.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* Contenedores internos con fondo blanco y texto oscuro para máxima legibilidad */
+.permiso, .requisitos {
+  width: 48%;
+  background-color: #ffffffeb;
+  color: #1a1a1a;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  border: 1px solid #dcdcdc;
+}
+
+/* Títulos llamativos */
+.h1-servicios {
+  font-size: 28px;
+  font-weight: bold;
+  color: #004080;
+  margin-bottom: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Subtítulos y listas bien definidas */
+.permiso h3, .requisitos h2 {
+  font-size: 20px;
+  color: #003366;
+  margin-bottom: 12px;
+  border-bottom: 2px solid #ffae00;
+  padding-bottom: 5px;
+}
+
+ul li, ol li {
+  font-size: 16px;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+ul p, ol p {
+  margin: 0;
+}
+@media (max-width: 768px) {
+  .container-permiso {
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .permiso, .requisitos {
+    width: 94%;
+  }
+}
+
+.container-sercicios {
+  width: 90%;
+  height: 450px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.223); /* Sombra más pronunciada pero suave */
+    border: 1px solid #e0e6ed94; /* Borde sutil */
+    border-radius: 15px;
+  background-image: url('img/aula-autoescuela.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.container-sercicios p {
+  color: rgb(0, 8, 5);
+}
+.h1-servicios {
+  text-align: center;
+    font-size: 24px;
+    padding-top: 40px;
+  margin-bottom: 20px;
+}
+.Servicios {
+  margin-left: 20px;
+  background-color: #e7e9edb4;
+  width: 280px;
+  height: 420px;
+  border-radius: 50px;
+}
+    
+.containe_google {
    height: 475px;
    width: 250px;
    display: grid;
@@ -187,17 +282,17 @@ margin-top: 50px;
    }
    .matferline{
     padding-top: 40px;
-    transition: transform 0.5s;
+    transition: transform 0.5s;;
    }
    .matferline:hover {
-     transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
+     transform: scale(1.2); /* Efecto de elevación al pasar el ratón */
  }
    .google-play{
     padding-top: 40px;
     transition: transform 0.5s;
    }
    .google-play:hover {
-   transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
+  transform: scale(1.2); /* Efecto de elevación al pasar el ratón */
   
    }
   .apple-store{
@@ -206,12 +301,13 @@ margin-top: 50px;
     transition: transform 0.5s;
   }
 .apple-store:hover {
-   transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
+   transform: scale(1.2); /* Efecto de elevación al pasar el ratón */
   
   }
   .containe_google:hover{
       transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
   }
+
   /* enlace Comentarios */
 .review-container {
             background-color: #ffffff;
@@ -262,7 +358,7 @@ margin-top: 50px;
         }
 
         .google-review-button:hover {
-            transform: translateY(-3px); /* Pequeño salto al pasar el ratón */
+             transform: scale(1.2);
             box-shadow: 0 8px 20px rgba(66, 133, 244, 0.6); /* Sombra más intensa al pasar el ratón */
             background: linear-gradient(45deg, #3367D6 0%, #2f8c47 100%); /* Gradiente ligeramente más oscuro */
         }
@@ -301,6 +397,13 @@ margin-top: 50px;
                 font-size: 1.1em;
             }
         }
+  @media screen and (min-width: 600px) {
+    .footer {
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
 
   @media screen and (min-width: 600px) {
     .footer {
