@@ -172,21 +172,6 @@ margin-top: 50px;
     margin-right: 80px;
   }
 }
-.container-permiso {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 20px;
-  width: 86%;
-  margin: 40px auto;
-  padding: 30px;
-  background-image: url("img/Elegir-la-autoescuela-ideal.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-radius: 15px;
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
-}
 
 /* Contenedores internos con fondo blanco y texto oscuro para máxima legibilidad */
 .container-permiso {
