@@ -1,3 +1,23 @@
+   /*cookies*/
+document.addEventListener('DOMContentLoaded', () => {
+  const cookieBanner = document.getElementById('cookieConsent');
+  const acceptButton = document.getElementById('acceptCookies');
+
+  // Si ya se aceptaron las cookies, no se muestra el banner
+  if (localStorage.getItem('cookiesAccepted') === 'true') {
+    cookieBanner.style.display = 'none';
+  } else {
+    // Si no se han aceptado, se muestra el banner
+    cookieBanner.style.display = 'flex';
+
+    acceptButton.addEventListener('click', () => {
+      // Oculta el banner y guarda la preferencia
+      cookieBanner.style.display = 'none';
+      localStorage.setItem('cookiesAccepted', 'true');
+    });
+  }
+});
+
  function toggleNavbar() {
     const navLinks = document.getElementById("navLinks");
     navLinks.classList.toggle("show");
@@ -20,22 +40,8 @@ function toggleMenu() {
     const isVisible = menu.style.display === "block";
     menu.style.display = isVisible ? "none" : "block";
   }
-   /*cookies*/
-document.addEventListener('DOMContentLoaded', () => {
-  const cookieBanner = document.getElementById('cookieConsent');
-  const acceptButton = document.getElementById('acceptCookies');
-
-  // Si ya se aceptaron las cookies, no se muestra el banner
-  if (localStorage.getItem('cookiesAccepted') === 'true') {
-    cookieBanner.style.display = 'none';
-  } else {
-    // Si no se han aceptado, se muestra el banner
-    cookieBanner.style.display = 'flex';
-
-    acceptButton.addEventListener('click', () => {
-      // Oculta el banner y guarda la preferencia
-      cookieBanner.style.display = 'none';
-      localStorage.setItem('cookiesAccepted', 'true');
-    });
+   // Alternar visibilidad del menú
+  function toggleMenu() {
+    const menu = document.getElementById("accMenu");
+    menu.style.display = (menu.style.display === "block") ? "none" : "block";
   }
-});
