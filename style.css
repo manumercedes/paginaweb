@@ -92,7 +92,9 @@ body {
     gap: 15px;
     margin-top: 10px;
   }
-
+  .title {
+  font-size: 35px;
+  }
   .navbar ul.show {
     display: flex;
   }
