@@ -78,7 +78,7 @@ body {
 }
 
 /* 🔄 Responsive behavior */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 7680px) {
   .navbar {
     text-align: left;
   }
@@ -416,7 +416,7 @@ ul p, ol p {
         }
 
         /* Responsive design resñas */
-        @media (max-width: 650px) {
+        @media (max-width: 768px) {
             .review-container {
               width: 70%;
                 padding: 20px 20px;
@@ -433,7 +433,7 @@ ul p, ol p {
                 font-size: 1.1em;
             }
         }
-@media scree and (min-with: 600px) {
+@media scree and (min-with: 768px) {
     .footer {
       flex-direction: row;
       justify-content: space-around;
