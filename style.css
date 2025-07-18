@@ -54,7 +54,7 @@ body {
 }
 .carousel {
     overflow: hidden;
-    width: 100%; /* Se ajusta al ancho completo del contenedor */
+    width: 101%; /* Se ajusta al ancho completo del contenedor */
     height: 460px;
     position: relative;
 }
@@ -72,7 +72,6 @@ body {
     object-fit: cover;
     flex-shrink: 0; /* Evita que se reduzcan al hacer scroll */
 }
-
 .enunciado {
   color: #055f2b;
 }
