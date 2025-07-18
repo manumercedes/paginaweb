@@ -258,7 +258,7 @@ ul p, ol p {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.223); /* Sombra más pronunciada pero suave */
     border: 1px solid #e0e6ed94; /* Borde sutil */
     border-radius: 15px;
-  background-image: url('img/aula-autoescuela.png');
+  background-image: url("img/aula-autoescuela.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
