@@ -81,10 +81,10 @@ body {
 }
 
 /* 🔄 Responsive behavior */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
   .navbar {
     text-align: left;
-    
+  }
   }
 
   .hamburger {
@@ -104,8 +104,6 @@ body {
  .logo {
   display: none;
   
-}
-
 }
 
 .enunciado {
@@ -173,10 +171,10 @@ margin-top: 50px;
     flex-direction: column;
     align-items: center; 
   }
+}
   .card1 {
     margin-right: 80px;
   }
-}
 .container-permiso {
   display: flex;
   justify-content: space-between;
