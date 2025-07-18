@@ -410,6 +410,7 @@ ul p, ol p {
       justify-content: space-around;
       align-items: flex-start;
       flex-wrap: wrap;
+       width: 100%;
     }
   }
   .footer-inicio p{
