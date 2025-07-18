@@ -78,7 +78,7 @@ body {
 }
 
 /* 🔄 Responsive behavior */
-@media screen and (max-width: 7680px) {
+@media screen and (max-width: 768px) {
   .navbar {
     text-align: left;
   }
