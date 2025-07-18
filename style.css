@@ -1,456 +1,443 @@
-/* styles.css */
+/* --- Variables y estilos base --- */
+:root {
+    --green-dark: rgb(13, 104, 48);
+    --green-light: #0a8e41;
+    --text-color: #1d0202;
+    --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    --hover-effect: translateY(-6px);
+}
+
 body {
     margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    color: var(--text-color);
 }
+
+/* --- Navbar --- */
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px;
 }
 
 .logo {
-  width: 80px;
-  height: 80px;
-  margin-left: 25px;
-  margin-top: 8px;
-  border: 4px solid rgb(13, 104, 48);
-  border-radius: 50px;
+    display: none; /* Oculto en móviles, se muestra en desktop */
 }
 
 .title {
-  margin-top: 12px;
-  margin-right: 85px;
-  font-size: 45px;
+    font-size: 30px;
+    margin: 10px 0 10px 20px;
 }
 
 .hamburger {
-  font-size: 28px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  margin-left: auto;
-  display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
 }
 
 .ul-nav {
-  display: flex;
-  list-style: none;
-  margin: 20px;
-  padding: 0;
+    display: none;
+    list-style: none;
+    flex-direction: column;
+    padding: 0;
+    width: 100%;
+}
+
+.ul-nav.show {
+    display: flex;
 }
 
 .ul-nav li {
-  margin: 10px 20px;
+    margin: 10px 0;
+    text-align: center;
 }
 
 .ul-nav a {
-  text-decoration: none;
-  color: #1d0202;
-  font-weight: bold;
-  font-size: 27px;
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 22px;
 }
+
 .ul-nav a:hover {
-  color: #0a8e41;
+    color: var(--green-light);
 }
+
+/* --- Carousel --- */
 .carousel {
     overflow: hidden;
-    width: 101%; /* Se ajusta al ancho completo del contenedor */
-    height: 460px;
-    position: relative;
+    width: 100%;
+    height: 300px;
 }
 
 .carousel-images {
     display: flex;
     transition: transform 0.5s ease-in-out;
-    width: 100%; /* Se expande al ancho disponible */
-    height: 100%; /* Coincide con la altura del contenedor */
+    width: 100%;
+    height: 100%;
 }
 
 .carousel-images img {
-    width: 100%; /* Cada imagen ocupa todo el ancho */
-    height: 100%; /* Y toda la altura */
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    flex-shrink: 0; /* Evita que se reduzcan al hacer scroll */
-}
-.enunciado {
-  color: #055f2b;
+    flex-shrink: 0;
 }
 
-/* 🔄 Responsive behavior */
-@media screen and (max-width: 768px) {
-  .navbar {
-    text-align: left;
-  }
-
-  .hamburger {
-    display: block;
-  }
-  .navbar ul {
-    flex-direction: column;
-    display: none;
-    gap: 15px;
-    margin-top: 10px;
-  }
-  .title {
-  margin-right: 45px;
-  font-size: 25px;
-  }
-  .navbar ul.show {
-    display: flex;
-  }
- .logo {
-  display: none;
-}
-}
+/* --- Tarjetas (Cards) --- */
 .enunciado {
-  text-align: center;
+    text-align: center;
+    color: var(--green-dark);
+    margin: 40px 0 20px;
 }
+
 .container-card {
-  display: flex;
-  gap: 100px;
-  justify-content: center; /* Opcional, centra las cards en la página */
-  flex-wrap: wrap; /* Por si la pantalla es pequeña */
-margin-top: 50px;
-
-}
-.card-title {
-  text-align: center;
-  font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
 }
 
-.card1, .card2, .card3 {
-  width: 22rem;
-  height: 22rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada pero suave */
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    border: 1px solid #e0e6ed; /* Borde sutil */
+.card {
+    width: 90%;
+    max-width: 22rem;
+    box-shadow: var(--box-shadow);
+    transition: transform 0.3s ease-in-out;
+    border: 1px solid #e0e6ed;
     border-radius: 15px;
-    overflow: hidden; 
-    
-}
-.card1 {
-  margin-left: 80px;
-}
-.card1:hover {
-   transform: translateY(-6px);
+    overflow: hidden;
+    text-align: center;
 }
 
-.card2:hover {
-   transform: translateY(-6px);
+.card:hover {
+    transform: var(--hover-effect);
 }
 
-.card3:hover {
-   transform: translateY(-6px);
-}
-.card-img-top {
-  width: 100%;
-    height: 200px;
-    object-fit: cover;
-    display: block;
-}
-.card-img-top2 {
+.card-img {
     width: 100%;
     height: 200px;
     object-fit: cover;
     display: block;
 }
 
-.card-img-top3 {
-   width: 100%;
-    height: 200px;
-    object-fit: cover;
-    display: block;
- }
-
-@media (max-width: 768px) {
-  .container-card {
-    flex-direction: column;
-    align-items: center; 
-  }
-  .card1 {
-    margin-right: 80px;
-  }
+.card-title {
+    font-size: 25px;
+    margin: 10px 0;
 }
 
-/* Contenedores internos con fondo blanco y texto oscuro para máxima legibilidad */
+.card-body {
+    padding: 10px;
+}
+
+/* --- Sección de Servicios --- */
 .container-permiso {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 20px;
-  width: 86%;
-  margin: 40px auto;
-  padding: 30px;
-  background-image: url("img/Elegir-la-autoescuela-ideal.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-radius: 15px;
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
-}
-
-/* Contenedores internos con fondo blanco y texto oscuro para máxima legibilidad */
-.permiso {
-  width: 45%;
-  background-color: #ffffffeb;
-  color: #1a1a1a;
-  font-family: 'Segoe UI', sans-serif;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-  border: 1px solid #dcdcdc;
-}
-.requisitos {
-  width: 42%;
-  height: 150px;
-  background-color: #ffffffeb;
-  color: #1a1a1a;
-  font-family: 'Segoe UI', sans-serif;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
-  border: 1px solid #dcdcdc;
-}
-
-/* Tí.requisitostulos llamativos */
-.h1-servicios {
-  font-size: 28px;
-  font-weight: bold;
-  color: #004080;
-  margin-bottom: 15px;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-/* Subtítulos y listas bien definidas */
-.permiso h3, .requisitos h2 {
-  font-size: 20px;
-  color: #003366;
-  margin-bottom: 12px;
-  border-bottom: 2px solid #ffae00;
-  padding-bottom: 5px;
-}
-
-ul li, ol li {
-  font-size: 16px;
-  margin-bottom: 10px;
-  line-height: 1.6;
-}
-
-ul p, ol p {
-  margin: 0;
-}
-@media (max-width: 768px) {
-  .container-permiso {
+    display: flex;
     flex-direction: column;
-    width: 60%;
-  }
+    align-items: center;
+    gap: 20px;
+    width: 90%;
+    margin: 40px auto;
+    padding: 20px;
+    background-image: url("img/Elegir-la-autoescuela-ideal.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+}
 
-  .permiso, .requisitos {
-    width: 80%;
-  }
+.permiso, .requisitos {
+    width: 100%;
+    background-color: #ffffffeb;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    border: 1px solid #dcdcdc;
+}
+
+.h1-servicios {
+    font-size: 24px;
+    font-weight: bold;
+    color: #004080;
+    margin-bottom: 15px;
+    text-align: center;
 }
 
 .container-servicios {
-  width: 90%;
-  height: 450px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.223); /* Sombra más pronunciada pero suave */
-    border: 1px solid #e0e6ed94; /* Borde sutil */
+    width: 90%;
+    height: auto;
+    margin: 40px auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.223);
+    border: 1px solid #e0e6ed94;
     border-radius: 15px;
-  background-image: url("img/aula-autoescuela.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+    background-image: url('img/aula-autoescuela.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
 }
-.container-sercicios p {
-  color: rgb(0, 8, 5);
-}
-.h1-servicios {
-  text-align: center;
-    font-size: 24px;
-    padding-top: 40px;
-  margin-bottom: 20px;
-}
+
 .Servicios {
-  margin-left: 20px;
-  background-color: #e7e9edb4;
-  width: 270px;
-  height: 410px;
-  border-radius: 50px;
+    background-color: #e7e9edb4;
+    width: 100%;
+    max-width: 270px;
+    padding: 20px;
+    border-radius: 20px;
 }
-@media (max-width: 768px) {
-   .container-servicios {
+
+/* --- Enlaces de Aplicaciones y Reseñas --- */
+.app-reviews-section {
+    display: flex;
     flex-direction: column;
-    align-items: center; 
-    width: 65%;
-  }
- }  
+    align-items: center;
+    gap: 20px;
+    margin: 40px 0;
+}
+
 .containe_google {
-   height: 475px;
-   width: 250px;
-   display: grid;
-   grid-template-rows: 1fr 0.3fr 0.3fr ;
-   text-align: center;
-   align-items: center;
-   margin-top: 20px;
-   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada pero suave */
-   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-   border: 1px solid #e0e6ed; /* Borde sutil */
-   border-radius: 15px; /* Bordes más redondeados */
-   }
-   .matferline{
-    padding-top: 40px;
-    transition: transform 0.5s;;
-   }
-   .matferline:hover {
-     transform: scale(1.2); /* Efecto de elevación al pasar el ratón */
- }
-   .google-play{
-    padding-top: 40px;
-    transition: transform 0.5s;
-   }
-   .google-play:hover {
-  transform: scale(1.2); /* Efecto de elevación al pasar el ratón */
-  
-   }
-  .apple-store{
-    padding-top: 40px;
-    padding-bottom: 40px;
-    transition: transform 0.5s;
-  }
-.apple-store:hover {
-   transform: scale(1.2); /* Efecto de elevación al pasar el ratón */
-  
-  }
-  .containe_google:hover{
-      transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
-  }
+    width: 90%;
+    max-width: 250px;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    transition: transform 0.3s ease-in-out;
+    border: 1px solid #e0e6ed;
+    border-radius: 15px;
+}
 
-  /* enlace Comentarios */
+.containe_google:hover {
+    transform: var(--hover-effect);
+}
+
+.app-link {
+    display: block;
+    padding: 15px 0;
+    transition: transform 0.5s;
+}
+
+.app-link:hover {
+    transform: scale(1.2);
+}
+
 .review-container {
-            background-color: #ffffff;
-            border-radius: 15px; /* Bordes más redondeados */
-            padding: 40px;
-            margin: 20px;
-            max-width: 550px;
-            text-align: center;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada pero suave */
-            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-            border: 1px solid #e0e6ed; /* Borde sutil */
-        }
+    width: 90%;
+    max-width: 480px;
+    padding: 30px 20px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: var(--box-shadow);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: 1px solid #e0e6ed;
+}
 
-        .review-container:hover {
-            transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
-        }
+.review-container:hover {
+    transform: var(--hover-effect);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
 
-        h1 {
-            font-size: 2.2em; /* Título más grande */
-            color: #2c3e50;
-            margin-bottom: 20px;
-            font-weight: 600; /* Más peso para el título */
-        }
-
-        p {
-            font-size: 1.1em;
-            line-height: 1.7;
-            color: #555;
-            margin-bottom: 15px;
-        }
-     
-        .google-review-button {
-            display: inline-flex; /* Alinea ícono y texto */
-            align-items: center;
-            justify-content: center;
-            background: linear-gradient(45deg, #4285F4 0%, #34a853 100%); /* Gradiente de color de Google */
-            color: white;
-            padding: 15px 35px; /* Más padding para un botón más grande */
-            border-radius: 50px; /* Botón píldora */
-            text-decoration: none;
-            font-size: 1.2em;
-            font-weight: 600;
-            margin-top: 25px;
-            transition: all 0.5s ease;
-            box-shadow: 0 5px 15px rgba(66, 133, 244, 0.4); /* Sombra para el botón */
-            letter-spacing: 0.5px; /* Espaciado entre letras */
-        }
-
-        .google-review-button:hover {
-             transform: scale(1.2);
-            box-shadow: 0 8px 20px rgba(66, 133, 244, 0.6); /* Sombra más intensa al pasar el ratón */
-            background: linear-gradient(45deg, #3367D6 0%, #2f8c47 100%); /* Gradiente ligeramente más oscuro */
-        }
-
-        .google-review-button svg {
-            margin-right: 10px; /* Espacio entre el ícono y el texto */
-            width: 24px;
-            height: 24px;
-            fill: white; /* Color del ícono */
-        }
-
-        .instructions {
-            margin-top: 30px;
-            font-size: 0.9em;
-            color: #888888;
-        }
-        .icono-google{
-            border-radius: 20px;
-            padding-right: 5px;
-        }
-
-        /* Responsive design resñas */
-        @media (max-width: 768px) {
-            .review-container {
-              width: 70%;
-                padding: 20px 20px;
-             margin-right: 50px;
-            }
-            h1 {
-                font-size: 1.8em;
-            }
-            p {
-                font-size: 1em;
-            }
-            .google-review-button {
-                padding: 12px 25px;
-                font-size: 1.1em;
-            }
-        }
-@media scree and (min-with: 768px) {
-    .footer {
-      flex-direction: row;
-      justify-content: space-around;
-      align-items: flex-start;
-      flex-wrap: wrap;
-       width: 100%;
-    }
-  }
-  .footer-inicio p{
+.google-review-button {
+    display: inline-flex;
+    align-items: center;
+    background: linear-gradient(45deg, #4285F4 0%, #34a853 100%);
     color: white;
-  }
-  .columna2 li a:hover {
-font-size: 22px;
-
-  }
-  .columna2 li a{
- text-decoration: none;
-
-  }
-  .columna2 ul{
-    list-style:none;
-    padding:0;
+    padding: 15px 35px;
+    border-radius: 50px;
     text-decoration: none;
-  }
-  .ticktok {
-    width: 55px;
-  }
-.telefono {
-  color: aliceblue;
- text-decoration: none;
- margin-bottom: 10px;
-}
-.telefono:hover {
-font-size: 22px;
+    font-size: 1.1em;
+    font-weight: 600;
+    margin-top: 25px;
+    transition: all 0.5s ease;
+    box-shadow: 0 5px 15px rgba(66, 133, 244, 0.4);
+    letter-spacing: 0.5px;
 }
 
+.google-review-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(66, 133, 244, 0.6);
+    background: linear-gradient(45deg, #3367D6 0%, #2f8c47 100%);
+}
+
+.icono-google {
+    border-radius: 20px;
+    padding-right: 5px;
+}
+
+/* --- Footer --- */
+.footer {
+    background: #092d0a;
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-column {
+    margin: 10px;
+}
+
+.footer-column h3 {
+    margin-bottom: 10px;
+}
+
+.footer-column p {
+    margin: 5px 0;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+    transition: font-size 0.3s;
+}
+
+.footer-column a:hover {
+    font-size: 1.1em;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+}
+
+.ticktok {
+    width: 55px;
+    height: 55px;
+}
+
+.telefono {
+    color: aliceblue;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+/* --- Responsive para Tablet y Desktop (a partir de 651px) --- */
+@media screen and (min-width: 651px) {
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .logo {
+        display: block;
+        width: 80px;
+        height: 80px;
+        margin-left: 25px;
+        border: 4px solid var(--green-dark);
+        border-radius: 50px;
+    }
+
+    .title {
+        margin-right: auto;
+        margin-left: 20px;
+        font-size: 45px;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .ul-nav {
+        display: flex !important;
+        flex-direction: row;
+        width: auto;
+    }
+
+    .ul-nav li {
+        margin: 10px 20px;
+    }
+
+    .carousel {
+        height: 460px;
+    }
+    
+    .container-card {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 50px;
+        justify-content: center;
+    }
+
+    .card {
+        max-width: 22rem;
+    }
+
+    .container-permiso {
+        flex-direction: row;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .permiso, .requisitos {
+        width: 45%;
+    }
+
+    .container-servicios {
+        height: 450px;
+        padding-left: 50px;
+    }
+    
+    .Servicios {
+        width: 270px;
+        height: 410px;
+    }
+
+    .app-reviews-section {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 50px;
+    }
+
+    .contenedor-iconos {
+        width: 250px;
+    }
+
+    .review-container {
+        width: 480px;
+    }
+    
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .footer-column {
+        flex: 1;
+        min-width: 200px;
+        margin: 10px;
+        text-align: left;
+    }
+
+    .social-links {
+        justify-content: flex-start;
+    }
+}
