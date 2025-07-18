@@ -4,7 +4,6 @@ body {
 }
 .navbar {
   display: flex;
- 
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -12,8 +11,8 @@ body {
 .logo {
   width: 80px;
   height: 80px;
-  margin-left: 15px;
-  margin-top: 5px;
+  margin-left: 25px;
+  margin-top: 8px;
   border: 4px solid rgb(13, 104, 48);
   border-radius: 50px;
 }
@@ -51,14 +50,12 @@ body {
   font-size: 27px;
 }
 .ul-nav a:hover {
-  color: #055f2b;
+  color: #0a8e41;
 }
-
-
 .carousel {
     overflow: hidden;
     width: 100%; /* Se ajusta al ancho completo del contenedor */
-    height: 450px;
+    height: 460px;
     position: relative;
 }
 
@@ -81,16 +78,14 @@ body {
 }
 
 /* 🔄 Responsive behavior */
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 600px) {
   .navbar {
     text-align: left;
-  }
   }
 
   .hamburger {
     display: block;
   }
-
   .navbar ul {
     flex-direction: column;
     display: none;
@@ -103,9 +98,8 @@ body {
   }
  .logo {
   display: none;
-  
 }
-
+}
 .enunciado {
   text-align: center;
 }
@@ -171,10 +165,10 @@ margin-top: 50px;
     flex-direction: column;
     align-items: center; 
   }
-}
   .card1 {
     margin-right: 80px;
   }
+}
 .container-permiso {
   display: flex;
   justify-content: space-between;
@@ -237,7 +231,7 @@ ul p, ol p {
     flex-direction: column;
     width: 80%;
   }
-}
+
   .permiso, .requisitos {
     width: 94%;
   }
@@ -270,13 +264,13 @@ ul p, ol p {
   height: 420px;
   border-radius: 50px;
 }
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
   .container-permiso, .container-sercicios {
     flex-direction: column;
     align-items: center; 
     width: 68%;
   }
- }    
+ }  
 .containe_google {
    height: 475px;
    width: 250px;
@@ -349,7 +343,7 @@ ul p, ol p {
             color: #555;
             margin-bottom: 15px;
         }
-
+     
         .google-review-button {
             display: inline-flex; /* Alinea ícono y texto */
             align-items: center;
@@ -390,11 +384,12 @@ ul p, ol p {
             padding-right: 5px;
         }
 
-        /* Responsive design */
-        @media (max-width: 600px) {
+        /* Responsive design resñas */
+        @media (max-width: 650px) {
             .review-container {
+              width: 80%;
                 padding: 30px 20px;
-                margin: 15px;
+             margin-right: 50px;
             }
             h1 {
                 font-size: 1.8em;
@@ -442,5 +437,4 @@ font-size: 22px;
 .telefono:hover {
 font-size: 22px;
 }
-
 
