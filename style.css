@@ -189,12 +189,23 @@ margin-top: 50px;
 }
 
 /* Contenedores internos con fondo blanco y texto oscuro para máxima legibilidad */
-.permiso, .requisitos {
-  width: 48%;
+.permiso {
+  width: 45%;
   background-color: #ffffffeb;
   color: #1a1a1a;
   font-family: 'Segoe UI', sans-serif;
-  padding: 25px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  border: 1px solid #dcdcdc;
+}
+.requisitos {
+  width: 42%;
+  height: 150px;
+  background-color: #ffffffeb;
+  color: #1a1a1a;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 20px;
   border-radius: 12px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
   border: 1px solid #dcdcdc;
@@ -236,7 +247,7 @@ ul p, ol p {
   }
 
   .permiso, .requisitos {
-    width: 94%;
+    width: 90%;
   }
 }
 
