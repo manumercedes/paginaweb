@@ -239,7 +239,7 @@ ul p, ol p {
     flex-direction: column;
     width: 80%;
   }
-
+}
   .permiso, .requisitos {
     width: 94%;
   }
@@ -272,7 +272,13 @@ ul p, ol p {
   height: 420px;
   border-radius: 50px;
 }
-    
+  @media (max-width: 768px) {
+  .container-permiso, .container-sercicios {
+    flex-direction: column;
+    align-items: center; 
+    width: 68%;
+  }
+ }    
 .containe_google {
    height: 475px;
    width: 250px;
@@ -410,22 +416,12 @@ ul p, ol p {
       align-items: flex-start;
       flex-wrap: wrap;
     }
-
-  @media screen and (min-width: 600px) {
-    .footer {
-      flex-direction: row;
-      justify-content: space-around;
-      align-items: flex-start;
-      flex-wrap: wrap;
-    
-    }
   }
-
   .footer-inicio p{
     color: white;
   }
   .columna2 li a:hover {
-font-size: 25px;
+font-size: 22px;
 
   }
   .columna2 li a{
@@ -437,13 +433,16 @@ font-size: 25px;
     padding:0;
     text-decoration: none;
   }
+  .ticktok {
+    width: 55px;
+  }
 .telefono {
   color: aliceblue;
  text-decoration: none;
  margin-bottom: 10px;
 }
 .telefono:hover {
-color: #1b8446;
+font-size: 22px;
 }
 
 
