@@ -177,7 +177,24 @@ margin-top: 50px;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 20px;
-  width: 90%;
+  width: 86%;
+  margin: 40px auto;
+  padding: 30px;
+  background-image: url("img/Elegir-la-autoescuela-ideal.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* Contenedores internos con fondo blanco y texto oscuro para máxima legibilidad */
+.container-permiso {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 86%;
   margin: 40px auto;
   padding: 30px;
   background-image: url("img/Elegir-la-autoescuela-ideal.jpg");
@@ -211,7 +228,7 @@ margin-top: 50px;
   border: 1px solid #dcdcdc;
 }
 
-/* Títulos llamativos */
+/* Tí.requisitostulos llamativos */
 .h1-servicios {
   font-size: 28px;
   font-weight: bold;
@@ -243,15 +260,15 @@ ul p, ol p {
 @media (max-width: 768px) {
   .container-permiso {
     flex-direction: column;
-    width: 80%;
+    width: 60%;
   }
 
   .permiso, .requisitos {
-    width: 90%;
+    width: 80%;
   }
 }
 
-.container-sercicios {
+.container-servicios {
   width: 90%;
   height: 450px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.223); /* Sombra más pronunciada pero suave */
@@ -274,15 +291,15 @@ ul p, ol p {
 .Servicios {
   margin-left: 20px;
   background-color: #e7e9edb4;
-  width: 280px;
-  height: 420px;
+  width: 270px;
+  height: 410px;
   border-radius: 50px;
 }
 @media (max-width: 768px) {
-  .container-permiso, .container-sercicios {
+   .container-servicios {
     flex-direction: column;
     align-items: center; 
-    width: 68%;
+    width: 65%;
   }
  }  
 .containe_google {
